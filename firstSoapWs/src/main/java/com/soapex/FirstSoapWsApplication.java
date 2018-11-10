@@ -2,15 +2,12 @@ package com.soapex;
 
 import javax.xml.ws.Endpoint;
 
-import org.apache.cxf.Bus;
-import org.apache.cxf.bus.spring.SpringBus;
-import org.apache.cxf.transport.servlet.CXFServlet;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.ServletRegistrationBean;
-import org.springframework.context.annotation.Bean;
+
+import com.service.HelloWorldServiceImpl;
 
 @SpringBootApplication
 public class FirstSoapWsApplication implements CommandLineRunner {
